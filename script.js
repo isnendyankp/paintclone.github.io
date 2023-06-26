@@ -68,7 +68,7 @@ function createCanvas() {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight - 50;
   context.fillStyle = bucketColor;
-  // context.fillRect();
+  context.fillRect(0, 0, canvas.width, canvas.height);
   body.appendChild(canvas);
 
 }
