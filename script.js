@@ -65,8 +65,8 @@ let currentColor = '#A51DAB';
 
 // Create Canvas
 function createCanvas() {
-  // canvas.width = ;
-  // canvas.height = ;
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight - 50;
   // context.fillStyle = ;
   // context.fillRect();
   body.appendChild(canvas);
