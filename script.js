@@ -19,7 +19,7 @@ const context = canvas.getContext('2d');
 let currentSize = 10;
 let bucketColor = '#FFFFFF';
 let currentColor = '#A51DAB';
-// let isEraser = false;
+let isEraser = false;
 // let isMouseDown = false;
 // let drawnArray = [];
 
@@ -35,7 +35,8 @@ let currentColor = '#A51DAB';
 
 // Setting Brush Color
 brushColorBtn.addEventListener('change', () => {
-
+  isEraser = false;
+  currentColor = `#${brushColorBtn.value}`;
 });
 
 // Setting Background Color
@@ -46,7 +47,7 @@ bucketColorBtn.addEventListener('change', () => {
 
 // // Eraser
 // eraser.addEventListener('click', () => {
-
+//   isEraser = true;
 //   brushIcon.style.color = 'white';
 //   eraser.style.color = 'black';
 //   activeToolEl.textContent = 'Eraser';
