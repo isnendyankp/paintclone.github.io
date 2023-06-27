@@ -39,9 +39,9 @@ let currentColor = '#A51DAB';
 // });
 
 // Setting Background Color
-// bucketColorBtn.addEventListener('change', () => {
+bucketColorBtn.addEventListener('change', () => {
 
-// });
+});
 
 // // Eraser
 // eraser.addEventListener('click', () => {
