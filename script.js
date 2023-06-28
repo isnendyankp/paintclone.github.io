@@ -55,16 +55,16 @@ eraser.addEventListener('click', () => {
   currentSize = 50;
 });
 
-// // Switch back to Brush
-// function switchToBrush() {
-//   isEraser = false;
-//   activeToolEl.textContent = 'Brush';
-//   brushIcon.style.color = 'black';
-//   eraser.style.color = 'white';
-//   currentColor = `#${brushColorBtn.value}`;
-//   currentSize = 10;
+// Switch back to Brush
+function switchToBrush() {
+  isEraser = false;
+  activeToolEl.textContent = 'Brush';
+  brushIcon.style.color = 'black';
+  eraser.style.color = 'white';
+  currentColor = `#${brushColorBtn.value}`;
+  currentSize = 10;
 
-// }
+}
 
 // Create Canvas
 function createCanvas() {
