@@ -167,7 +167,9 @@ canvas.addEventListener('mouseup', () => {
 
 // Save to Local Storage
 saveStorageBtn.addEventListener('click', () => {
-
+  // use it to actually save our drawn array into local storage
+  // call with name savedCanvas, run JSON.stringify in order to store our drawn array as a string
+  localStorage.setItem('savedCanvas', JSON.stringify(drawnArray));
   // Active Tool
   activeToolEl.textContent = 'Canvas Saved';
   setTimeout(switchToBrush, 1500);
