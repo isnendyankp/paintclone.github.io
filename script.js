@@ -177,7 +177,8 @@ saveStorageBtn.addEventListener('click', () => {
 
 // Load from Local Storage
 loadStorageBtn.addEventListener('click', () => {
-  if (localStorage.) {
+  // check to see if this item actually exists
+  if (localStorage.getItem('savedCanvas')) {
     drawnArray = JSON(localStorage.);
 
   // Active Tool
@@ -185,7 +186,7 @@ loadStorageBtn.addEventListener('click', () => {
     setTimeout(switchToBrush, 1500);
   } 
 
-// });
+});
 
 // // Clear Local Storage
 // clearStorageBtn.addEventListener('click', () => {
