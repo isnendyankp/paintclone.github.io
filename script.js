@@ -181,7 +181,8 @@ loadStorageBtn.addEventListener('click', () => {
   if (localStorage.getItem('savedCanvas')) {
     // after check item set local drawn array to be json parse
     drawnArray = JSON.parse(localStorage.savedCanvas);
-
+    // call restoreCanvas, when switching background colors and this how actually going to repaint the canvas with data from drawn array
+    restoreCanvas();
   // Active Tool
     activeToolEl.textContent = 'Canvas Loaded';
     setTimeout(switchToBrush, 1500);
