@@ -179,7 +179,8 @@ saveStorageBtn.addEventListener('click', () => {
 loadStorageBtn.addEventListener('click', () => {
   // check to see if this item actually exists
   if (localStorage.getItem('savedCanvas')) {
-    drawnArray = JSON(localStorage.);
+    // after check item set local drawn array to be json parse
+    drawnArray = JSON.parse(localStorage.savedCanvas);
 
   // Active Tool
     activeToolEl.textContent = 'Canvas Loaded';
