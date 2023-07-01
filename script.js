@@ -183,11 +183,13 @@ loadStorageBtn.addEventListener('click', () => {
     drawnArray = JSON.parse(localStorage.savedCanvas);
     // call restoreCanvas, when switching background colors and this how actually going to repaint the canvas with data from drawn array
     restoreCanvas();
-  // Active Tool
+    // Active Tool
     activeToolEl.textContent = 'Canvas Loaded';
     setTimeout(switchToBrush, 1500);
-  } 
-
+  } else {
+    activeToolEl.textContent = 'No Canvas Found';
+    setTimeout(switchToBrush, 1500);
+  }
 });
 
 // // Clear Local Storage
