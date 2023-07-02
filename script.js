@@ -194,8 +194,8 @@ loadStorageBtn.addEventListener('click', () => {
 
 // Clear Local Storage
 clearStorageBtn.addEventListener('click', () => {
-
- 
+localStorage.removeItem('savedCanvas');
+  
 });
 
 // // Download Image
