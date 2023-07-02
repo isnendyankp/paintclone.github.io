@@ -205,6 +205,8 @@ downloadBtn.addEventListener('click', () => {
   // target downloadBtn & set href and equal to canvas.toDataURL
   // save as image/jpeg and set value quality
   downloadBtn.href = canvas.toDataURL('image/jpeg', 1);
+  // example format file name download
+  downloadBtn.download = 'paint-example.jpeg';
   
 });
 
