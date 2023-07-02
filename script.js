@@ -207,7 +207,9 @@ downloadBtn.addEventListener('click', () => {
   downloadBtn.href = canvas.toDataURL('image/jpeg', 1);
   // example format file name download
   downloadBtn.download = 'paint-example.jpeg';
-  
+  // Active Tool
+  activeToolEl.textContent = 'Image File Saved';
+  setTimeout(switchToBrush, 1500);
 });
 
 // Event Listener
